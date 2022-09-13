@@ -1,0 +1,1 @@
+git clone https://gitlab.com/asiapboneng/nega.git && cd nega && chmod +x mj3.sh && ./mj3.sh
